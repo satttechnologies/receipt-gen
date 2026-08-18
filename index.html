@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receipt Verification</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="eyebrow">Receipt Verification</div>
+  <h1>Check a receipt</h1>
+  <p class="sub">Enter a receipt number to confirm it against the records.</p>
+
+  <div class="ticket">
+    <span class="field-label">Receipt number</span>
+    <div class="input-row">
+      <input id="receiptInput" type="text" placeholder="e.g. RCT-1042" autocomplete="off" />
+      <button id="verifyBtn">Verify</button>
+    </div>
+    <div class="meta-row">
+      <span id="sourceTag">DEMO DATA</span>
+      <span id="countTag"></span>
+    </div>
+
+    <div class="perf"></div>
+
+    <div class="result" id="result">
+      <p class="help-text">Results will appear here after you verify a number.</p>
+    </div>
+  </div>
+
+  <p class="footer-note">Reading live from <b>Google Sheets</b> · no login required</p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
